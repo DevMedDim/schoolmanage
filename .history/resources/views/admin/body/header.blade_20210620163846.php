@@ -1,3 +1,4 @@
+@section('header')
 <header class="main-header">
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top pl-30">
@@ -104,7 +105,7 @@
 	      <!-- User Account-->
           <li class="dropdown user user-menu">	
 			<a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
-				<img src="{{asset('backend/images/avatar/1.jpg')}}" alt="">
+				<img src="../images/avatar/1.jpg" alt="">
 			</a>
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">
@@ -126,3 +127,4 @@
       </div>
     </nav>
   </header>
+@endsection

@@ -5,11 +5,9 @@
 			<a class="nav-link" href="javascript:void(0)">FAQ</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Contact us Now</a>
+			<a class="nav-link" href="#">Purchase Now</a>
 		  </li>
 		</ul>
     </div>
-	  &copy; <script type="text/javascript">
-        document.write(new Date().getFullYear());
-      </script> All Rights Reserved.
+	  &copy; 2020 <a href="#">Psd to Html Expert</a>. All Rights Reserved.
   </footer>
