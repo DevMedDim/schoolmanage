@@ -42,12 +42,11 @@
 
                     </a>
                 @endif
-                <div class="m-3">
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
-                        {{ __('Create an Account') }}
+                <br>
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                     {{ __('Create an Account') }}
 
-                    </a>
-                </div>
+                </a>
 
                 <x-jet-button class="ml-4">
                     {{ __('Log in') }}

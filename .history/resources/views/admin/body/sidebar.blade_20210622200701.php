@@ -27,14 +27,14 @@
             <li class="treeview">
                 <a href="#">
                     <i data-feather="message-circle"></i>
-                    <span>Manage User</span>
+                    <span>Application</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{route('user.view')}}"><i class="ti-more"></i>View User</a></li>
-                    <li><a href="calendar.html"><i class="ti-more"></i>Add User</a></li>
+                    <li><a href="chat.html"><i class="ti-more"></i>Chat</a></li>
+                    <li><a href="calendar.html"><i class="ti-more"></i>Calendar</a></li>
                 </ul>
             </li>
 
@@ -74,6 +74,14 @@
                     <li><a href="components_nestable.html"><i class="ti-more"></i>Nestable</a></li>
                     <li><a href="components_progress_bars.html"><i class="ti-more"></i>Progress Bars</a></li>
                 </ul>
+            </li>
+
+
+            <li>
+                <a href="auth_login.html">
+                    <i data-feather="lock"></i>
+                    <span>Log Out</span>
+                </a>
             </li>
 
         </ul>

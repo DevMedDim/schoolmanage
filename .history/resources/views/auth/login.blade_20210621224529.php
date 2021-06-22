@@ -44,7 +44,7 @@
                 @endif
                 <div class="m-3">
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
-                        {{ __('Create an Account') }}
+                        {{ __('Create an Account.') }}
 
                     </a>
                 </div>

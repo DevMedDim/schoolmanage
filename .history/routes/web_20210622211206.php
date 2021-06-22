@@ -30,7 +30,8 @@ Route::get('/admin/logout', [AdminController::class, 'Logout']
 // User Management All Routes
 
 Route::prefix('users')->group(function(){
-    Route::get('/view', [UserController::class, 'UserView'])->name('user.view');
+    Route::get('/user/view', [UserController::class, 'UserView']
+    )->name('user.view');
 
-});
+})
 
