@@ -28,9 +28,8 @@
                     <div class="col-12">
 
                         <div class="box">
-                            <div class="   box-header with-border">
-                                <h3 class="box-title">All Users</h3>
-                                <a href="" class="  ml-100 btn btn-rounded btn-outline"> Add User</a>
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Data Table With Full Features</h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">

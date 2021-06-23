@@ -30,7 +30,7 @@
                         <div class="box">
                             <div class="   box-header with-border">
                                 <h3 class="box-title">All Users</h3>
-                                <a href="" class="  ml-100 btn btn-rounded btn-outline"> Add User</a>
+                                <a href="" class="  ml-200 btn btn-rounded btn-outline"> Add User</a>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">

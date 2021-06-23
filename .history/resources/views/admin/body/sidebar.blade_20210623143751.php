@@ -6,7 +6,7 @@
             <div class="ulogo">
                 <a href="index.html">
                     <!-- logo for regular state and mobile devices -->
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex  justify-content-center">
                         <img src="{{ asset('backend/images/logo-dark.png') }}" alt="">
                         <h3><b>Akdim</b> Admin</h3>
                     </div>
