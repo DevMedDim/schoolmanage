@@ -46,12 +46,12 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($allData as $user )
+                                            @foreach ($allData as $item => $user)
                                             <tr>
-                                                <td>{{$user->id}}</td>
-                                                <td>{{$user->usertype}}</td>
-                                                <td> {{$user->name}} </td>
-                                                <td> {{$user->email}} </td>
+                                                <td>{{$item}}</td>
+                                                <td>Role</td>
+                                                
+                                                <td> {{$item->email}} </td>
                                                 <td>
                                                     <a href="" class="btn btn-info">Edit</a>
                                                     <a href="" class="btn btn-danger">Delete</a>
