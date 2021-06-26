@@ -17,17 +17,17 @@ class UserController extends Controller
         return view('backend.user.add_user');
     }
 
-    public function StoreUser(Request $request){
-        $validatedData = $request->validate([
+    public function StoreUser(Request $Request){
+        $validatedData = $Request->validate([
             'email' => 'required|unique:users',
             'name' => 'required',
-        ]);
+        ])
 
         $data = new User();
-        $data->usertype = $request->usertype;
-        $data->name  = $request->name;
-        $data->email = $request->email;
-        $data->password = bcrypt($request->password);
+        $data->usertype = $Request->usertype;
+        $data->name  = $Request->name;
+        $data->email = $Request->email;
+        $data->password = bcrypt($Request->password);
         $data->save();
         return redirect()->route('user.view');
 

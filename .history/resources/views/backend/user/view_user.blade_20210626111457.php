@@ -30,7 +30,7 @@
                         <div class="box">
                             <div class="   box-header with-border">
                                 <h3 class="box-title">All Users</h3>
-                                <a href="{{route('user.add')}}" style="float: right; color:white; background-color:green; font-weight:bold;" class=" ml-100 btn  btn-outline"> Add User</a>
+                                <a href="" style="float: right" class="  ml-100 btn btn-rounded btn-outline"> Add User</a>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
