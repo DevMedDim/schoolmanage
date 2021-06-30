@@ -16,7 +16,7 @@
                                 <!-- Basic Forms -->
                                 <div class="box">
                                     <div class="box-header with-border">
-                                        <h4 class="box-title">Add User</h4>
+                                        <h4 class="box-title">Update User</h4>
                                     </div>
                                     <!-- /.box-header -->
                                     <div class="box-body">
@@ -30,21 +30,14 @@
                                                                 <h5>Name <span class="text-danger">*</span></h5>
                                                                 <div class="controls">
                                                                     <input type="text" name="name" class="form-control"
-                                                                        required="">
+                                                                        required="" value="{{$editData->name}}">
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
                                                                 <h5>Email <span class="text-danger">*</span></h5>
                                                                 <div class="controls">
                                                                     <input type="email" name="email" class="form-control"
-                                                                        required="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Password <span class="text-danger">*</span></h5>
-                                                                <div class="controls">
-                                                                    <input type="password" name="password"
-                                                                        class="form-control" required="">
+                                                                        required="" value="{{$editData->email}}">
                                                                 </div>
                                                             </div>
 

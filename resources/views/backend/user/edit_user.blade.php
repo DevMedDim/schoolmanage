@@ -16,13 +16,13 @@
                                 <!-- Basic Forms -->
                                 <div class="box">
                                     <div class="box-header with-border">
-                                        <h4 class="box-title">Add User</h4>
+                                        <h4 class="box-title">Update User</h4>
                                     </div>
                                     <!-- /.box-header -->
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col">
-                                                <form method="post" action="{{ route('user.store') }}">
+                                                <form method="post" action="{{ route('user.update',$editData->id) }}">
                                                     @csrf
                                                     <div class="row">
                                                         <div class="col-12">
@@ -30,21 +30,14 @@
                                                                 <h5>Name <span class="text-danger">*</span></h5>
                                                                 <div class="controls">
                                                                     <input type="text" name="name" class="form-control"
-                                                                        required="">
+                                                                        required="" value="{{$editData->name}}">
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
                                                                 <h5>Email <span class="text-danger">*</span></h5>
                                                                 <div class="controls">
                                                                     <input type="email" name="email" class="form-control"
-                                                                        required="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <h5>Password <span class="text-danger">*</span></h5>
-                                                                <div class="controls">
-                                                                    <input type="password" name="password"
-                                                                        class="form-control" required="">
+                                                                        required="" value="{{$editData->email}}">
                                                                 </div>
                                                             </div>
 
@@ -56,14 +49,14 @@
                                                                         <option value="" disabled="" selected="">Select Your
                                                                             City
                                                                         </option>
-                                                                        <option value="Admin">Admin</option>
-                                                                        <option value="User">User</option>
+                                                                        <option value="Admin" {{( $editData->usertype == "Admin" ? "selected" : "" )}}>Admin</option>
+                                                                        <option value="User" {{( $editData->usertype == "User" ? "selected" : "" )}}>User</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
 
                                                             <div class="text-xs-right">
-                                                                <input value="Submit" type="submit"
+                                                                <input value="Update" type="submit"
                                                                     class="btn btn-rounded btn-info">
                                                             </div>
                                                         </div>

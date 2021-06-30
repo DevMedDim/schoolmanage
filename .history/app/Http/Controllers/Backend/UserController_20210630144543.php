@@ -42,7 +42,7 @@ class UserController extends Controller
         $editData = User::find($id);
         return view('backend.user.edit_user',compact('editData'));
     }
-    public function UpdateUser(Request $request, $id){
+    public function UpdateUser(Request $Request, $id){
         
         $data = User::find($id);
         $data->usertype = $request->usertype;
