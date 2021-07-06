@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
     return view('admin.index');
 })->name('dashboard');
 
@@ -29,7 +29,7 @@ Route::get('/admin/logout', [AdminController::class, 'Logout']
 
 // User Management All Routes
 
-Route::prefix('users')->group(function(){
+Route::prefix('admin/users')->group(function(){
     Route::get('/view', [UserController::class, 'ViewUser'])->name('user.view');
     Route::get('/add_user', [UserController::class, 'AddUser'])->name('user.add');
     Route::post('/store', [UserController::class, 'StoreUser'])->name('user.store');
